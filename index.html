@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Guardian – Support</title>
+  <meta name="description" content="Support for Expense Guardian – Track where your money goes.">
+  <style>
+    :root {
+      --bg: #f8f9fa;
+      --surface: #fff;
+      --text: #1a1a1a;
+      --text-muted: #5c5c5c;
+      --accent: #007aff;
+      --accent-hover: #0056b3;
+      --border: #1a1a1a;
+      --radius: 12px;
+      --shadow: 0 2px 12px rgba(0,0,0,0.06);
+      --max-width: 720px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--text);
+      background: var(--bg);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      min-height: 100vh;
+      padding: clamp(1rem, 4vw, 2rem);
+      padding-bottom: 3rem;
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: clamp(1.5rem, 5vw, 2.5rem) 0;
+    }
+
+    .app-icon {
+      width: clamp(80px, 20vw, 120px);
+      height: clamp(80px, 20vw, 120px);
+      border-radius: 22px;
+      object-fit: cover;
+      box-shadow: var(--shadow);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      margin: 0 0 0.25em;
+      font-size: clamp(1.5rem, 5vw, 2rem);
+      font-weight: 700;
+    }
+
+    .tagline {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Sections */
+    section {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: clamp(1rem, 4vw, 1.5rem);
+      margin-bottom: 1.5rem;
+    }
+
+    section h2 {
+      margin: 0 0 1rem;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    /* Screenshots grid */
+    .screenshots {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 480px) {
+      .screenshots { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (min-width: 720px) {
+      .screenshots { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    .screenshot-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .screenshot-item img {
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--border);
+    }
+
+    .screenshot-item figcaption {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .contact-box {
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    .contact-box p {
+      margin: 0 0 1rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .contact-email {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 10px;
+      transition: background 0.2s;
+      min-height: 48px;
+    }
+
+    .contact-email:hover,
+    .contact-email:focus {
+      background: var(--accent-hover);
+      color: #fff;
+    }
+
+    .contact-email:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0 1rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="container">
+      <header>
+        <img
+          class="app-icon"
+          src="assets/image-027ea76d-b3bf-4231-b5e2-119274f6cae1.png"
+          alt="Expense Guardian app icon"
+          width="120"
+          height="120"
+        >
+        <h1>Expense Guardian</h1>
+        <p class="tagline">Track where your money goes.</p>
+      </header>
+
+      <section>
+        <h2>About the app</h2>
+        <p>Expense Guardian helps you track expenses, view spending in list and chart views, set reminders to log expenses, and manage one-off and repeating expenses—so you always know where your money goes.</p>
+      </section>
+
+      <section>
+        <h2>Screenshots</h2>
+        <div class="screenshots">
+          <figure class="screenshot-item">
+            <img
+              src="assets/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-02-21_at_12.41.27-0746dfad-a659-443f-b234-86d4f6e8d970.png"
+              alt="Expenses list – empty state"
+              loading="lazy"
+            >
+            <figcaption>Expenses list – track where your money goes</figcaption>
+          </figure>
+          <figure class="screenshot-item">
+            <img
+              src="assets/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-02-21_at_12.41.54-183709c5-02bf-463c-9161-091436cbd8af.png"
+              alt="Add expense – details and date"
+              loading="lazy"
+            >
+            <figcaption>Add expense – details, amount, repeating toggle, date</figcaption>
+          </figure>
+          <figure class="screenshot-item">
+            <img
+              src="assets/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-02-21_at_12.42.37-ef23d1b7-e0e6-449f-b84b-0e7db4b4028f.png"
+              alt="Add repeating expense – frequency and dates"
+              loading="lazy"
+            >
+            <figcaption>Repeating expense – e.g. monthly rent, frequency, start & end</figcaption>
+          </figure>
+          <figure class="screenshot-item">
+            <img
+              src="assets/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-02-21_at_12.42.50-0128e4c9-bb5a-4371-8314-833b84851332.png"
+              alt="Charts – spending by year and period"
+              loading="lazy"
+            >
+            <figcaption>Charts – view spending over time</figcaption>
+          </figure>
+          <figure class="screenshot-item">
+            <img
+              src="assets/Simulator_Screenshot_-_iPhone_17_Pro_-_2026-02-21_at_12.43.03-cbd0ed95-104f-4cfa-a77c-ef4817aef74a.png"
+              alt="Reminder – choose when to be reminded to log expenses"
+              loading="lazy"
+            >
+            <figcaption>Reminder – set a time to be reminded to log expenses</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section>
+        <h2>Contact support</h2>
+        <div class="contact-box">
+          <p>Questions, feedback, or need help? Send us an email.</p>
+          <a href="mailto:vvincent891@gmail.com" class="contact-email">Contact support</a>
+        </div>
+      </section>
+
+      <footer>
+        <p>Expense Guardian – Support</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
